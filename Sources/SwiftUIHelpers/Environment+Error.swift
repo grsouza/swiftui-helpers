@@ -5,6 +5,7 @@ private enum ErrorEnvironmentKey: EnvironmentKey {
 }
 
 extension EnvironmentValues {
+  /// The error value of this Environment.
   public var error: Error? {
     get { self[ErrorEnvironmentKey.self] }
     set { self[ErrorEnvironmentKey.self] = newValue }
